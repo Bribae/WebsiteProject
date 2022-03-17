@@ -1,0 +1,29 @@
+<div class="topbar">
+<mat-toolbar color="primary" >
+<button mat-icon-button routerLink="" >
+<mat-icon>home</mat-icon>
+</button>
+  <span>Burts Beans</span>
+  <span class="spacer"></span>
+  <button mat-icon-button class="Side-Bar" (click)="sidenav.open()" >
+    <mat-icon>menu</mat-icon>
+  </button>
+</mat-toolbar>
+</div>
+<mat-sidenav #sidenav mode="over" class="sidebar" position="end"  >
+  <mat-toolbar color="accent">
+  <button mat-icon-button class="exitbutton" (click)="sidenav.close()">
+    <mat-icon>clear</mat-icon>
+  </button>
+    <span class="spacer-sidebar"></span>
+    <span>Side bar</span>
+  </mat-toolbar>
+  <div class="sidebar-list">
+  <h2>Faq</h2>
+    <h2 routerLink="error">Contact us</h2>
+    <h2 routerLink="error">Admin access</h2>
+    <h2 routerLink="signin">Sign in</h2>
+    <h2 routerLink="error">Your account</h2>
+  </div>
+</mat-sidenav>
+

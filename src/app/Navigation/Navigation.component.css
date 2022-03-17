@@ -1,0 +1,28 @@
+.spacer {
+  flex: 1 1 auto;
+}
+.example-container {
+  width: 500px;
+  height: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+
+.sidebar {
+  width: 400px;
+}
+.topbar{
+  margin: 0;
+}
+.sidebar-list{
+text-align: right;
+}
+
+.spacer-sidebar {
+  flex: 1 1 auto;
+}
+
+.sidebar-list.hover{
+  text-underline: black;
+}
+
