@@ -12,10 +12,13 @@ import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
 import { ErrorComponent } from './error/error.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+
 
 const routes: Routes = [
   {path:'signin', component: SignInComponent},
-  {path: 'error', component: ErrorComponent}
+  {path: 'error', component: ErrorComponent},
+  {path: 'signin/signup', component: SignUpComponent}
 ];
 
 
@@ -25,6 +28,7 @@ const routes: Routes = [
     NavigationComponent,
     SignInComponent,
     ErrorComponent,
+    SignUpComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,7 +39,7 @@ const routes: Routes = [
     BrowserAnimationsModule,
     MatSidenavModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
   ],
   exports: [RouterModule],
   providers: [],

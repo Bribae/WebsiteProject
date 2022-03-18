@@ -1,0 +1,21 @@
+<div class="emails">
+  <p>
+    <mat-form-field appearance="standard"  color="accent">
+      <mat-label>Email</mat-label>
+      <input matInput ="Email">
+      <mat-icon matSuffix>email</mat-icon>
+    </mat-form-field>
+  </p>
+</div>
+<div class="password">
+  <p>
+    <mat-form-field appearance="standard"  color="accent">
+      <mat-label>Password</mat-label>
+      <input matInput="Password" type="password" #input minlength="8" required>
+      <mat-icon matSuffix>lock</mat-icon>
+      <mat-hint>Min 8 characters</mat-hint>
+      <mat-hint align="end">{{input.value?.length || 0}}/8</mat-hint>
+    </mat-form-field>
+  </p>
+</div>
+<button mat-raised-button color="warn" >Sign Up</button>

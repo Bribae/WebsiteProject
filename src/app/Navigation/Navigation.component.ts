@@ -9,6 +9,9 @@ import {Component, NgModule, OnInit} from '@angular/core';
 export class NavigationComponent implements OnInit {
 
 
+
+
+
   SideNav = false;
 
 
