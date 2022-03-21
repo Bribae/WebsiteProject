@@ -22,7 +22,13 @@ text-align: right;
   flex: 1 1 auto;
 }
 
-.sidebar-list.hover{
-  text-underline: black;
+.secret{
+  color: white;
+}
+.secret:hover{
+  cursor: help;
+}
+.sidebar-list:hover{
+  cursor: pointer;
 }
 
