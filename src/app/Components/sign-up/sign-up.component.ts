@@ -8,6 +8,18 @@ import { FormControl, Validators} from "@angular/forms";
 })
 export class SignUpComponent implements OnInit {
 
+  email = new FormControl('', [Validators.required, Validators.email]);
+  minlength = new FormControl('', [Validators.minLength(8)]);
+
+
+  getErrorMessage() {
+    if (this.email.hasError('required')) {
+      return 'You must enter a value';
+    }
+
+    return this.email.hasError('email') ? 'Not a valid email' : '';
+  }
+
   constructor() { }
 
   ngOnInit(): void {

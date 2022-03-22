@@ -9,3 +9,55 @@
 .qubbi{
   width: 10px;
 }
+.black{
+  width: 20px;
+  position: absolute;
+
+}
+.black:hover{
+  cursor: e-resize;
+}
+.white{
+  width: 20px;
+  position: absolute;
+ margin-left: 500px;
+}
+.white:hover{
+  cursor: se-resize;
+}
+.white1{
+  width: 20px;
+  position: absolute;
+  margin-left: 700px;
+  margin-top: 190px;
+}
+.white1:hover{
+  cursor: n-resize;
+}
+
+.white2{
+  width: 20px;
+  position: absolute;
+  margin-left: 700px;
+  margin-top: 10px;
+}
+.white2:hover{
+  cursor: sw-resize;
+}
+.white3{
+  width: 20px;
+  position: absolute;
+  margin-left: 360px;
+  margin-top: 310px;
+}
+.white3:hover{
+  cursor: w-resize;
+}
+.white4{
+  width: 20px;
+  position: absolute;
+  margin-top: 310px;
+}
+.white4:hover{
+  cursor: pointer;
+}

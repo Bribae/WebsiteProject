@@ -14,9 +14,11 @@ import {MatInputModule} from "@angular/material/input";
 import { ErrorComponent } from './Components/error/error.component';
 import { SignUpComponent } from './Components/sign-up/sign-up.component';
 import { AdminLoginComponent } from './Components/admin-login/admin-login.component';
-import { Message1Component } from './Components/message1/message1.component';
+import { Message1Component } from './Components/messages/message1/message1.component';
 import { HomeComponent } from './Components/home/home.component';
 import { AdminHomeComponent } from './Components/admin-home/admin-home.component';
+import { ReactiveFormsModule, FormsModule} from "@angular/forms";
+import { Message2Component } from './Components/messages/message2/message2.component';
 
 
 const routes: Routes = [
@@ -26,7 +28,8 @@ const routes: Routes = [
   {path: 'adminlogin', component: AdminLoginComponent},
   {path: 'message/1', component: Message1Component},
   {path: '', component: HomeComponent},
-  {path: 'adminhome', component: AdminHomeComponent}
+  {path: 'adminhome', component: AdminHomeComponent},
+  {path: 'message/2', component: Message2Component}
 ];
 
 
@@ -41,6 +44,7 @@ const routes: Routes = [
     Message1Component,
     HomeComponent,
     AdminHomeComponent,
+    Message2Component,
   ],
   imports: [
     BrowserModule,
@@ -52,6 +56,8 @@ const routes: Routes = [
     MatSidenavModule,
     MatFormFieldModule,
     MatInputModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   exports: [RouterModule],
   providers: [],

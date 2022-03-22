@@ -1,10 +1,10 @@
 <div class="Login-Form">
   <form>
   <h2 class="text">To Continue the Admin Password is needed...</h2>
-    <mat-form-field >
-<input class="form">
+    <mat-form-field appearance="outline">
+<input class="form" matInput="password" [formControl]="password" required>
     </mat-form-field>
     <div></div>
-    <button routerLink="/adminhome">Continue</button>
+    <button (click)="check()" routerLink="/adminhome">Confirm</button>
   </form>
 </div>

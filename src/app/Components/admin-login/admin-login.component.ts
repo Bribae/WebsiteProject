@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FormControl, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-admin-login',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminLoginComponent implements OnInit {
 
+password = new FormControl('',[Validators.required])
+
+  check() {
+  if(7){
+
+  }
+  };
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
 
 }
