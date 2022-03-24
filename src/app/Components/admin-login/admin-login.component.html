@@ -5,6 +5,6 @@
 <input class="form" matInput="password" [formControl]="password" required>
     </mat-form-field>
     <div></div>
-    <button (click)="check()" routerLink="/adminhome">Confirm</button>
+    <button *ngIf="TruthJar" routerLink="/adminhome">Confirm</button>
   </form>
 </div>

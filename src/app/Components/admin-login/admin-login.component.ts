@@ -10,15 +10,22 @@ export class AdminLoginComponent implements OnInit {
 
 password = new FormControl('',[Validators.required])
 
-  check() {
-  if(7){
+ PasswordToMatch = '2112Lover69'
 
-  }
-  };
+TruthJar = false
 
   constructor() { }
 
   ngOnInit(): void {
+  this.password.valueChanges.subscribe( t =>{
+    if(t === this.PasswordToMatch){
+      this.TruthJar = true
+    }
+    else {
+      this.TruthJar = false
+    }
+    }
+  )
   }
 
 
