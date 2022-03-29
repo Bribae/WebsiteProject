@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CursorPuzzleComponent } from './cursor-puzzle.component';
+import { MousePuzzleComponent } from './mouse-puzzle.component';
 
-describe('CursorPuzzleComponent', () => {
-  let component: CursorPuzzleComponent;
-  let fixture: ComponentFixture<CursorPuzzleComponent>;
+describe('MousePuzzleComponent', () => {
+  let component: MousePuzzleComponent;
+  let fixture: ComponentFixture<MousePuzzleComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CursorPuzzleComponent ]
+      declarations: [ MousePuzzleComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CursorPuzzleComponent);
+    fixture = TestBed.createComponent(MousePuzzleComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

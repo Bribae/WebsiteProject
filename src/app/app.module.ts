@@ -19,7 +19,9 @@ import { HomeComponent } from './Components/home/home.component';
 import { AdminHomeComponent } from './Components/admin-home/admin-home.component';
 import { ReactiveFormsModule, FormsModule} from "@angular/forms";
 import { Message2Component } from './Components/messages/message2/message2.component';
-import { CursorPuzzleComponent } from './cursor-puzzle/cursor-puzzle.component';
+import { MousePuzzleComponent } from './Components/mouse-puzzle/mouse-puzzle.component';
+import { SymbolPuzzleComponent } from './Components/symbol-puzzle/symbol-puzzle.component';
+
 
 
 const routes: Routes = [
@@ -31,7 +33,9 @@ const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'adminhome', component: AdminHomeComponent},
   {path: 'message/2', component: Message2Component},
-  {path: 'cursor', component: CursorPuzzleComponent}
+  {path: 'mouse', component: MousePuzzleComponent},
+  {path: 'Symbol', component: SymbolPuzzleComponent}
+
 ];
 
 
@@ -47,7 +51,9 @@ const routes: Routes = [
     HomeComponent,
     AdminHomeComponent,
     Message2Component,
-    CursorPuzzleComponent,
+    MousePuzzleComponent,
+    SymbolPuzzleComponent,
+
   ],
   imports: [
     BrowserModule,

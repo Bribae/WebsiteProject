@@ -61,3 +61,10 @@
 .white4:hover{
   cursor: pointer;
 }
+.link{
+  width: 20px;
+  position: absolute;}
+.link:hover{
+  cursor: pointer;
+}
+

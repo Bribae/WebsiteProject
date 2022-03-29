@@ -1,0 +1,43 @@
+.white{
+  width: 40px;
+  margin-left: 7in;
+  margin-top: 7in;
+  opacity: 0;
+}
+.white:hover{
+  cursor: pointer;
+
+}
+.Red{
+ background-color: Red;
+}
+.DeepOrange{
+  background-color: orangered;
+}
+.Orange{
+  background-color: DarkOrange;
+}
+.LightOrange{
+  background-color: orange;
+}
+.DarkYellow{
+  background-color: goldenrod;
+}
+.Yellow{
+  background-color: yellow;
+}
+.YellowGreen{
+  background-color: yellowgreen;
+}
+.Lime{
+  background-color: LimeGreen;
+}
+.Green{
+  background-color: Green;
+}
+.DarkGreen{
+  background-color: darkgreen;
+}
+.Black {
+  background-color: black;
+}
