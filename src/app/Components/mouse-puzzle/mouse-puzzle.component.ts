@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, ElementRef, OnInit, ViewChild, HostListener} from '@angular/core';
+import {AfterViewInit, Component, ElementRef, OnInit, ViewChild, HostListener, AfterViewChecked} from '@angular/core';
 
 
 @Component({
@@ -6,7 +6,7 @@ import {AfterViewInit, Component, ElementRef, OnInit, ViewChild, HostListener} f
   templateUrl: './mouse-puzzle.component.html',
   styleUrls: ['./mouse-puzzle.component.css']
 })
-export class MousePuzzleComponent implements OnInit, AfterViewInit {
+export class MousePuzzleComponent implements OnInit, AfterViewInit, AfterViewChecked {
 
   WhiteSquareY: number = 0;
   WhiteSquareX: number = 0;
@@ -87,6 +87,9 @@ MouseTracker(t: any){
   }
 
   ngAfterViewInit() {
+
+  }
+  ngAfterViewChecked() {
     this.WhiteSquareX = this.WhiteSquare.nativeElement.getBoundingClientRect().left + 20;
     this.WhiteSquareY = this.WhiteSquare.nativeElement.getBoundingClientRect().top + 20;
   }

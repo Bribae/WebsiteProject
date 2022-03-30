@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {FormControl, Validators} from "@angular/forms";
+import {AdminLoginService} from "../../admin-login.service";
+
 
 @Component({
   selector: 'app-admin-login',
@@ -8,24 +10,27 @@ import {FormControl, Validators} from "@angular/forms";
 })
 export class AdminLoginComponent implements OnInit {
 
-password = new FormControl('',[Validators.required])
+  password = new FormControl('', [Validators.required])
 
- PasswordToMatch = '2112Lover69'
+  PasswordToMatch = '2112Lover69';
 
-TruthJar = false
+  TruthJar = false;
 
-  constructor() { }
+  LoginContainer = this.AdminLogin.Login;
+
+  constructor(private AdminLogin: AdminLoginService) {
+
+  }
+
+  Login() {
+    this.AdminLogin.Login = true
+  }
 
   ngOnInit(): void {
-  this.password.valueChanges.subscribe( t =>{
-    if(t === this.PasswordToMatch){
-      this.TruthJar = true
-    }
-    else {
-      this.TruthJar = false
-    }
-    }
-  )
+    this.password.valueChanges.subscribe(t => {
+        this.TruthJar = t === this.PasswordToMatch;
+      }
+    )
   }
 
 

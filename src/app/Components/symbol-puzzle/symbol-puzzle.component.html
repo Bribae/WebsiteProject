@@ -1,1 +1,16 @@
-<p>Whooo Hoooo You did it</p>
+<div style="text-align: center">
+<img style="width: 3in; margin-top: 0.6in" src="../../../assets/devil.jpg">
+<img style="width: 3in; margin-top: 0.6in" src="../../../assets/skull.png">
+<img style="width: 3in;" src="../../../assets/wings.jpg">
+</div>
+<div style="text-align: center">
+<form>
+  <input style="width: 3in; height: 3in; font-size: 3in; text-align: center" [formControl]="number1">
+  <input style="width: 3in; height: 3in; font-size: 3in; text-align: center" [formControl]="number2">
+  <input style="width: 3in; height: 3in; font-size: 3in; text-align: center" [formControl]="number3">
+  <div></div>
+  <button (click)="check()">Check Code</button>
+  <div></div>
+  <button *ngIf="TruthJar" routerLink="/">Continue</button>
+</form>
+</div>

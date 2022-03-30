@@ -1,10 +1,15 @@
-<div class="Login-Form">
+<div class="Login-Form" *ngIf="!LoginContainer">
   <form>
   <h2 class="text">To Continue the Admin Password is needed...</h2>
     <mat-form-field appearance="outline">
 <input class="form" matInput="password" [formControl]="password" required>
     </mat-form-field>
     <div></div>
-    <button *ngIf="TruthJar" routerLink="/adminhome">Confirm</button>
+    <button *ngIf="TruthJar" routerLink="/adminhome" (click)="Login()">Confirm</button>
   </form>
 </div>
+<div *ngIf="LoginContainer" style="text-align: center; margin-top: 10%; font-size: large">You have already signed into the admin access
+ <div></div>
+  <button style="margin-top: 10px" routerLink="/adminhome">Continue</button>
+</div>
+
