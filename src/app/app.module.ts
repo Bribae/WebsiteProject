@@ -23,6 +23,7 @@ import { SymbolPuzzleComponent } from './Components/symbol-puzzle/symbol-puzzle.
 import { Error1Component } from './Components/errors/error1/error1.component';
 import { Error2Component } from './Components/errors/error2/error2.component';
 import { Error3Component } from './Components/errors/error3/error3.component';
+import { TimedPuzzelComponent } from './Components/timed-puzzel/timed-puzzel.component';
 
 
 
@@ -38,8 +39,8 @@ const routes: Routes = [
   {path: 'Symbol', component: SymbolPuzzleComponent},
   {path: 'error/1', component: Error1Component},
   {path: 'error/2', component: Error2Component},
-  {path: 'error/3', component: Error3Component}
-
+  {path: 'error/3', component: Error3Component},
+  {path: 'Time', component: TimedPuzzelComponent},
 ];
 
 
@@ -59,6 +60,7 @@ const routes: Routes = [
     Error1Component,
     Error2Component,
     Error3Component,
+    TimedPuzzelComponent,
 
   ],
   imports: [

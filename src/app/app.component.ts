@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {AdminLoginService} from "./admin-login.service";
 
 
 @Component({
@@ -8,6 +9,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'WebsiteProject';
+
+  constructor(public login: AdminLoginService) {
+  }
 
 
 }

@@ -2,4 +2,7 @@
 <mat-sidenav-container></mat-sidenav-container>
 
 <app-Navigation></app-Navigation>
+<div style="font-family: 'Comic Sans MS', sans-serif;
+text-align: center"
+     *ngIf="login.TimerStarted">Timer: {{login.TotalTime}}</div>
 <router-outlet></router-outlet>
