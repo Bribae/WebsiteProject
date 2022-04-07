@@ -19,8 +19,10 @@ export class TimedPuzzelComponent implements OnInit, AfterViewChecked {
 
   @HostListener("window:scroll", [])
   onWindowScroll() {
-    this.BlackSquare1X = this.BlackSquare1.nativeElement.getBoundingClientRect().left + 20;
-    this.BlackSquare1Y = this.BlackSquare1.nativeElement.getBoundingClientRect().top + 20;
+    if(!this.Square1Clicked) {
+      this.BlackSquare1X = this.BlackSquare1.nativeElement?.getBoundingClientRect().left + 20;
+      this.BlackSquare1Y = this.BlackSquare1.nativeElement?.getBoundingClientRect().top + 20;
+    }
   }
 
 
@@ -38,6 +40,7 @@ export class TimedPuzzelComponent implements OnInit, AfterViewChecked {
   }
 
   MouseTracker(t: any){
+    if(!this.Square1Clicked){
     this.CursorX = t.clientX
     this.CursorY = t.clientY
     let XDistance = Math.abs(this.CursorX - this.BlackSquare1X)
@@ -85,15 +88,17 @@ export class TimedPuzzelComponent implements OnInit, AfterViewChecked {
     }
     if (Distance < 100000000000000000000000000000000000000000){
       this.DistanceOpacity = 'full'
-    }
+    } }
   };
 
 
   Failure = false;
 
   ngAfterViewChecked(): void {
-    this.BlackSquare1X = this.BlackSquare1.nativeElement.getBoundingClientRect().left + 20;
-    this.BlackSquare1Y = this.BlackSquare1.nativeElement.getBoundingClientRect().top + 20;
+    if(!this.Square1Clicked) {
+      this.BlackSquare1X = this.BlackSquare1.nativeElement?.getBoundingClientRect().left + 20;
+      this.BlackSquare1Y = this.BlackSquare1.nativeElement?.getBoundingClientRect().top + 20;
+    }
   }
 
   BlackSquare1Func(){

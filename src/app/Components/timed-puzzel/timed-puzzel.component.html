@@ -1,13 +1,13 @@
 
-<div style="text-align: center; font-family: 'Comic Sans MS', sans-serif;">
+<div style="text-align: center; font-family: 'Comic Sans MS', sans-serif;"> </div>
 <div *ngIf="!this.Login.TimeFailure">
-  <div style="height: 100vh; width: 209vh; text-align: center;" (mousemove)="MouseTracker($event)" [class]="DistanceOpacity" >
-    <img *ngIf="!Square1Clicked" #BlackSquare1 alt src="../../../assets/blacksquare.jpg"
+  <div *ngIf="!Square1Clicked" style="height: 100vh; width: 209vh;" (mousemove)="MouseTracker($event)" [class]="DistanceOpacity" >
+    <img  #BlackSquare1 alt src="../../../assets/blacksquare.jpg"
        (click)="BlackSquare1Func()" [class]="SquareClass">
   </div>
 </div>
 
-</div>
+
 
 
 
