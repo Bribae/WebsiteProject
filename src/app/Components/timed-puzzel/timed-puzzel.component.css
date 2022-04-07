@@ -1,0 +1,59 @@
+.zero{
+  width: 40px;
+  opacity: 0;
+}
+.one{
+  width: 40px;
+  opacity: 0.1;
+}
+.two{
+  width: 40px;
+  opacity: 0.2;
+}
+.three{
+  width: 40px;
+  opacity: 0.3;
+}
+.four{
+  width: 40px;
+  opacity: 0.4;
+}
+.five{
+  width: 40px;
+  opacity: 0.5;
+}
+.six{
+  width: 40px;
+  opacity: 0.6;
+}
+.seven{
+  width: 40px;
+  opacity: 0.7;
+}
+.eight{
+  width: 40px;
+  opacity: 0.8;
+}
+.nine{
+  width: 40px;
+  opacity: 0.9;
+}
+.full{
+  width: 40px;
+  opacity: 1;
+}
+.Black1{
+  width: 40px;
+  margin-left: 6in;
+  margin-top: 8in;
+}
+.Black2{
+  width: 40px;
+  margin-left: 3in;
+  margin-top: 1in;
+}
+.Black3{
+  width: 40px;
+  margin-left: 2in;
+  margin-top: 7in;
+}
