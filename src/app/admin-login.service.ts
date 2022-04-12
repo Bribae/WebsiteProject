@@ -20,7 +20,6 @@ export class AdminLoginService {
      return;
    }
    else {
-     console.log(this.TotalTime)
    this.TotalTime--;
 
 
@@ -29,7 +28,7 @@ export class AdminLoginService {
 
  StartTimer = () =>{
    if(this.TimerStarted){
-     console.log("shit")
+
      return;
    }
    else {

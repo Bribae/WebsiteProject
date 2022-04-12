@@ -57,3 +57,24 @@
   margin-left: 2in;
   margin-top: 7in;
 }
+.Squares{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1.5in;
+opacity: 0.8;
+}
+.Button{
+  text-align: center;
+}
+.Squares1{
+  width: 1.5in;
+  margin-left: 5px;
+}
+.SquaresContainer{
+  text-align: center;
+}
+.Squares1:hover{
+  cursor: pointer;
+}
+

@@ -5,6 +5,40 @@
     <img  #BlackSquare1 alt src="../../../assets/blacksquare.jpg"
        (click)="BlackSquare1Func()" [class]="SquareClass">
   </div>
+<div *ngIf="Puzzle2">
+<div>
+
+
+
+
+
+
+
+  <div>
+  <img *ngIf="Red"  class="Squares" src="../../../assets/Red_Square.jpg">
+  <img *ngIf="Yellow"  class="Squares" src="../../../assets/Yellow_Square.jpg">
+  </div>
+  <div>
+  <img *ngIf="Blue"  class="Squares" src="../../../assets/Blue_Square.jpg">
+  <img *ngIf="Green"  class="Squares" src="../../../assets/Green Square.jpg">
+  </div>
+  <div *ngIf="ColorFail" style="text-align: center">Failed</div>
+  <div class="Button">
+  <button *ngIf="!ColorWin1" (click)="Start()">Start</button>
+    <button *ngIf="ColorWin1" (click)="Start()">Next</button>
+  </div>
+  <div class="SquaresContainer">
+  <div>
+    <img class="Squares1" (click)="RedFunc()" src="../../../assets/Red_Square.jpg">
+    <img class="Squares1" (click)="YellowFunc()" src="../../../assets/Yellow_Square.jpg">
+  </div>
+  <div>
+    <img class="Squares1" (click)="BlueFunc()" src="../../../assets/Blue_Square.jpg">
+    <img class="Squares1" (click)="GreenFunc()"  src="../../../assets/Green Square.jpg">
+  </div>
+  </div>
+</div>
+</div>
 </div>
 
 
